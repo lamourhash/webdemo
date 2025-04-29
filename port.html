@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boosin</title>
+    <style>
+        /* General Styles */
+        body {
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #007BFF, #FF6F00); /* Gradient from blue to orange */
+            color: white;
+            padding: 20px 15px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Logo section */
+        .logo {
+            width: 120px;
+            height: 120px;
+            background-color: #4575a9;
+            border-radius: 50%;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            margin-left: 20px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FF6F00; /* Orange color */
+        }
+
+        /* Hero Section (Home) */
+        #home {
+            background: linear-gradient(to top left, #007BFF, #FF6F00);
+            color: white;
+            padding: 80px 15px;
+            text-align: center;
+        }
+
+        #home h2 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        #home p {
+            font-size: 20px;
+            line-height: 1.5;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Section Styles */
+        section {
+            background: linear-gradient(to top left, #007BFF, #FF6F00);
+            padding: 40px 15px;
+            text-align: center;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .photo {
+            width: 300px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        .photo p {
+            color: #555;
+            margin-top: 10px;
+        }
+
+        form input, form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        form button {
+            padding: 12px 20px;
+            background-color: #FF6F00; /* Orange color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #FF3D00; /* Darker orange */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .photo {
+                width: 90%;
+            }
+
+            nav a {
+                font-size: 14px;
+                margin: 0 10px;
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            section {
+                padding: 30px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav a {
+                font-size: 12px;
+                margin: 0 8px;
+            }
+
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            form input, form textarea {
+                width: 100%;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Boosin</h1>
+        <!-- Tech Logo Placeholder -->
+        <div class="logo">
+            <img src="images/boosin.webp" alt="Tech Logo" style="width: 200%; height: 200%; border-radius: 200%;">
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Photos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <h2>Welcome to Boosin</h2>
+        <h3>Lameck Zachary;CEO Boosin Company</h3>
+        <p2>We deliver top-notch tech solutions that drive business success. Whether you're looking for <b>web development, mobile apps, or IT consulting</b>, we’ve got you covered.</p2>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Boosin we believe nothing should go without Tech at its side.And tech is for us all.Here we give you a chance to explore Tech right at your fingertips with ease.We make you fill like a pro,like you've made it even if you have not.So welcome and journey with us.  </p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ol>
+            <li>Web Development</li>
+            <li>Mobile App Development</li>
+            <li>IT Consulting</li>
+            <li>Cloud Solutions</li>
+            <li>Coding Solutions</li>
+            <li>PowerPoint Presentations</li>
+        </ol>
+    </section>
+
+    <section id="portfolio">
+        <h2>Photos</h2>
+        <div class="gallery">
+            <div class="photo">
+                <img src="images/musk.jpg" alt="Project 1">
+                <p>Project 1 Description</p>
+            </div>
+            <div class="photo">
+                <img src="images/girrafe.jpg" alt="Project 2">
+                <p>Just for fun.</p>
+            </div>
+            <div class="photo">
+                <img src="images/lameck.jpg" alt="Project 3">
+                <p>I know it is not IT related.</p>
+            </div>
+            <div class="photo"> 
+                <img src="images/out.jpg" alt="Project 4">
+                <p>Don't ask where I was.</p>
+            </div> 
+            <div class="photo">
+                <img src="images/tv.jpg" alt="Project 5">
+                <p>Yes I was on tv in the Stone Age.</p>
+            </div>
+            <div class="photo">
+                <img src="images/example.jpg" alt="Project 6">
+                <p>IT in simple terms.</p>
+               </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <h3>Email:lameckzachary17@gmail.com</h3>
+        <h4>Contact:+254751336871</h4>
+        <h5>Intagram:@_.royce__</h5>
+        <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Boosin. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
